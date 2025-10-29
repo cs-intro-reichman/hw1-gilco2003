@@ -6,7 +6,8 @@ public class FVCalc {
 		double interestRate = Double.parseDouble(args[1]), futureValue;
 		//I divided the interest rate by a hundred because it represents a percantage.
 		futureValue = currentValue * Math.pow((1.0 + interestRate/100), numberOfYears);
-		System.out.println("After " + numberOfYears + " years, " + currentValue + "$ saved at " + interestRate + "% will yield " + (int)futureValue + "$");
+		System.out.println("After " + numberOfYears + " years, $" + currentValue + " saved at " + interestRate + "% will yield $" + (int)futureValue);
 
 	}
 }
+
