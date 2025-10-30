@@ -12,31 +12,29 @@ public class TimeFormat {
 		int hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));
 		// Does the same with the minutes part of the input.
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
+		//Initializing parts of the sentence I am planning to build.
 		String strMinutes, strHours, strAMPM;
-		if(hours > 12){
-			strHours= "" + (hours-12);
-			strAMPM=" PM";
+		//The following code makes sure that the rules of
+		// when to subtract 12 and when to add AM\PM are being followed.
+		if (hours > 12) {
+			strHours = "" + (hours-12);
+			strAMPM =" PM";
 		}
-		else if(hours == 12){
+		else if (hours == 12) {
 			strHours = "" + (hours);
 			strAMPM = " PM";
 		}
-	    else{
+	    else {
 			strHours = "" + hours;
 			strAMPM =" AM";
 		}
-		if(minutes<10){
-			strMinutes="0" + minutes;
+		if (minutes<10) {
+			strMinutes = "0" + minutes;
 		}
-		else
-			strMinutes="" + minutes;
+		else {
+			strMinutes = "" + minutes;
+		}
 		System.out.println(strHours + ":" + strMinutes + strAMPM);
 
-		/*if(hours > 12)
-        System.out.println((hours-12) + ":" + minutes + " PM");
-		else if(hours==12)
-		  System.out.println((hours) + ":" + minutes + " PM");
-		else
-		 System.out.println((hours) + ":" + minutes + " AM");*/
 	}
 }
