@@ -28,13 +28,12 @@ public class TimeFormat {
 			strHours = "" + hours;
 			strAMPM =" AM";
 		}
-		if (minutes<10) {
+		if (minutes < 10) {
 			strMinutes = "0" + minutes;
 		}
 		else {
 			strMinutes = "" + minutes;
 		}
 		System.out.println(strHours + ":" + strMinutes + strAMPM);
-
 	}
 }
