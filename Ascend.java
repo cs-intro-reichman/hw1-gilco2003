@@ -3,7 +3,8 @@
 public class Ascend {
 	public static void main(String[] args) {
 		//Initializing all the integers used in the code.
-		int a, b, c, lim =Integer.parseInt(args[0]), min,max,mid;
+		int a, b, c, min, max, mid;
+		int lim = Integer.parseInt(args[0]);
 		a = (int)(Math.random() * lim);
 		b = (int)(Math.random() * lim);
 		c = (int)(Math.random() * lim);
